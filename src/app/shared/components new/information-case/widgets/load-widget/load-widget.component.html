@@ -1,11 +1,11 @@
-<dx-circular-gauge *ngIf="dataSource" [attr.title]="dataSource[0].tag +' / '+dataSource[0].date" 
+<dx-circular-gauge 
 id="circularGauge"
-[value]="dataSource[0].value">
+[value]="value">
 <dxo-value-indicator
     type="rangebar"
     color="#337ab7"
-    size="5"
-                     offset="-5">
+    [size]="5"
+                     [offset]="-5">
 </dxo-value-indicator>
 
 <dxo-tooltip [enabled]="true"></dxo-tooltip>
@@ -16,19 +16,18 @@ id="circularGauge"
 </dxo-size>
 <dxo-scale
 [startValue]="0"
-[endValue]="maxScale"
+[endValue]="maxValue"
 >
-<dxo-label indentFromTick="0" [visible]="false">
+<dxo-label [indentFromTick]="0" [visible]="false">
 </dxo-label>
 </dxo-scale>
 <dxo-range-container [width]="6">
 </dxo-range-container>
 </dx-circular-gauge>
-<div class="title-tab" *ngIf="dataSource" [attr.title]="dataSource[0].tag+' / '+dataSource[0].date">
+<div class="title-tab"  >
     <div class="main-title">
-        {{dataSource[0].value.toFixed(2)}} 
+        {{value}}
     </div>
     <div class="unit-title">
-        {{dataSource[0].unit}}
-    </div>
+       {{unit}}    </div>
 </div>

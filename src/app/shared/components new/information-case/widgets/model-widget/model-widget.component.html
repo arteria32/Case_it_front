@@ -11,8 +11,8 @@ id="circularGauge"
 <dxo-value-indicator
     type="rangebar"
     [color]="color"
-    size="5"
-                     offset="-5">
+    [size]="5"
+                     [offset]="-5">
 </dxo-value-indicator>
 <dxo-range-container [width]="6" >
   <dxi-range [startValue]="0" [endValue]="maxScale" [color]="colorBg"></dxi-range>
@@ -31,7 +31,7 @@ id="circularGauge"
 [endValue]="maxScale"
 [tickInterval]="maxScale/4"
 >
-<dxo-label indentFromTick="0" [visible]="false">
+<dxo-label [indentFromTick]="0" [visible]="false">
 </dxo-label>
 </dxo-scale>
 <!-- <dxo-title

@@ -1,7 +1,7 @@
 import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {
-  DxButtonModule, DxSelectBoxModule, DxListModule, DxSwitchModule, DxDataGridModule, DxPopupModule, DxScrollViewModule, DxLoadIndicatorModule,
+  DxButtonModule, DxSelectBoxModule, DxListModule, DxSwitchModule, DxDataGridModule, DxPopupModule, DxScrollViewModule, DxLoadIndicatorModule, DxCircularGaugeModule,
 } from 'devextreme-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +21,9 @@ import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainHeaderComponent } from './shared/components new/main-header/main-header.component';
 import { InformationCaseComponent } from './shared/components new/information-case/information-case.component';
+import { ModelWidgetComponent } from './shared/components new/information-case/widgets/model-widget/model-widget.component';
+import { ListWidgetComponent } from './shared/components new/information-case/widgets/list-widget/list-widget.component';
+import { LoadWidgetComponent } from './shared/components new/information-case/widgets/load-widget/load-widget.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { InformationCaseComponent } from './shared/components new/information-ca
     RecomListWidgetComponent,
     WorkSchemeWidgetComponent,
     MainHeaderComponent,
-    InformationCaseComponent
+    InformationCaseComponent,
+    ModelWidgetComponent,
+    ListWidgetComponent,
+    LoadWidgetComponent,ModelWidgetComponent
   ],
   imports: [
     CommonModule,
@@ -52,7 +58,8 @@ import { InformationCaseComponent } from './shared/components new/information-ca
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule ,
+    ReactiveFormsModule,
+    DxCircularGaugeModule,
   ],
   providers: [ApiService,
     { provide: MAT_DATE_LOCALE, useValue: 'ru-RU' },

@@ -12,21 +12,17 @@
     <dx-scroll-view class="full-height-scrollable">
 
 <div class="body-list">
-    <div class="info-case-tab">
-        <div class="conteiner-tab">
-            <div  class="widget-body-tab" *ngFor="let widget of widgetMap">
+            <div  class="widget-body-tab" *ngFor="let widget of widgetSet.widgetMap">
                 <div class="widget-title">{{widget.nameWidget}}  </div>
                                 <div class="switch-tab" [ngSwitch]="widget.typeWidget">
-                    <list-widget *ngSwitchCase="'list'" [inputParams]="widget.paramsTag">
+                    <list-widget *ngSwitchCase="'list'">
                     </list-widget>
-                    <load-widget *ngSwitchCase="'loadingChart'" [inputParams]="widget.paramsTag" [maxScale]="widget.maxScale">
+                    <load-widget *ngSwitchCase="'loadingChart'"  [value]="widget.value" [maxValue]="widget.maxValue" [unit]="widget.unit">
                     </load-widget>
-                    <model-widget *ngSwitchCase="'modelChart'" [inputParams]="widget.paramsTag" [maxScale]="widget.maxScale">
+                    <model-widget *ngSwitchCase="'modelChart'">
                     </model-widget>
 
-                    </div>
 
-            </div>
         </div>
     </div>
 </div> 
