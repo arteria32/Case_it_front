@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?2398968');
+  src: url('../font/fontello.eot?2398968#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?2398968') format('woff2'),
+       url('../font/fontello.woff?2398968') format('woff'),
+       url('../font/fontello.ttf?2398968') format('truetype'),
+       url('../font/fontello.svg?2398968#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?2398968#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="gpn-i-"]:before, [class*=" gpn-i-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased gpn-is size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.gpn-i-gant:before { content: '\e800'; } /* '' */
+.gpn-i-kanban:before { content: '\e801'; } /* '' */
+.gpn-i-perekluchatel1:before { content: '\e802'; } /* '' */
+.gpn-i-po-ubyvaniyu:before { content: '\e803'; } /* '' */
+.gpn-i-perekluchatel2:before { content: '\e804'; } /* '' */
+.gpn-i-po-vozrastaniyu:before { content: '\e805'; } /* '' */
+.gpn-i-setkoy:before { content: '\e806'; } /* '' */
+.gpn-i-spiskom:before { content: '\e807'; } /* '' */
+.gpn-i-spisok2:before { content: '\e808'; } /* '' */
+.gpn-i-tablica:before { content: '\e809'; } /* '' */
+.gpn-i-rasshirit:before { content: '\e80a'; } /* '' */
+.gpn-i-avatar:before { content: '\e80b'; } /* '' */
+.gpn-i-gruppa:before { content: '\e80c'; } /* '' */
+.gpn-i-3d:before { content: '\e80d'; } /* '' */
+.gpn-i-algorhitm:before { content: '\e80e'; } /* '' */
+.gpn-i-balance:before { content: '\e80f'; } /* '' */
+.gpn-i-bar:before { content: '\e810'; } /* '' */
+.gpn-i-candle:before { content: '\e811'; } /* '' */
+.gpn-i-graph:before { content: '\e812'; } /* '' */
+.gpn-i-line:before { content: '\e813'; } /* '' */
+.gpn-i-line2:before { content: '\e814'; } /* '' */
+.gpn-i-net:before { content: '\e815'; } /* '' */
+.gpn-i-pie:before { content: '\e816'; } /* '' */
+.gpn-i-pie2:before { content: '\e817'; } /* '' */
+.gpn-i-radial:before { content: '\e818'; } /* '' */
+.gpn-i-slider:before { content: '\e819'; } /* '' */
+.gpn-i-speedometr:before { content: '\e81a'; } /* '' */
+.gpn-i-stolbcy:before { content: '\e81b'; } /* '' */
+.gpn-i-files:before { content: '\e81c'; } /* '' */
+.gpn-i-folder:before { content: '\e81d'; } /* '' */
+.gpn-i-file-add:before { content: '\e81e'; } /* '' */
+.gpn-i-file-open:before { content: '\e81f'; } /* '' */
+.gpn-i-folder-add:before { content: '\e820'; } /* '' */
+.gpn-i-folder-delete:before { content: '\e821'; } /* '' */
+.gpn-i-new-file:before { content: '\e822'; } /* '' */
+.gpn-i-picture:before { content: '\e823'; } /* '' */
+.gpn-i-report:before { content: '\e824'; } /* '' */
+.gpn-i-report_1:before { content: '\e825'; } /* '' */
+.gpn-i-report-add:before { content: '\e826'; } /* '' */
+.gpn-i-sertificat:before { content: '\e827'; } /* '' */
+.gpn-i-ustanovka:before { content: '\e828'; } /* '' */
+.gpn-i-park:before { content: '\e829'; } /* '' */
+.gpn-i-zip:before { content: '\e830'; } /* '' */
+.gpn-i-archive:before { content: '\e831'; } /* '' */
+.gpn-i-archive2:before { content: '\e832'; } /* '' */
+.gpn-i-badge:before { content: '\e833'; } /* '' */
+.gpn-i-book:before { content: '\e834'; } /* '' */
+.gpn-i-excell:before { content: '\e835'; } /* '' */
+.gpn-i-file:before { content: '\e836'; } /* '' */
+.gpn-i-alarm:before { content: '\e837'; } /* '' */
+.gpn-i-bd:before { content: '\e838'; } /* '' */
+.gpn-i-check_1:before { content: '\e839'; } /* '' */
+.gpn-i-decline_1:before { content: '\e83a'; } /* '' */
+.gpn-i-delta:before { content: '\e83b'; } /* '' */
+.gpn-i-izbrannoe:before { content: '\e83c'; } /* '' */
+.gpn-i-kritichnost:before { content: '\e83d'; } /* '' */
+.gpn-i-led:before { content: '\e83e'; } /* '' */
+.gpn-i-lock:before { content: '\e83f'; } /* '' */
+.gpn-i-masomer:before { content: '\e840'; } /* '' */
+.gpn-i-obnovleniye-bd:before { content: '\e841'; } /* '' */
+.gpn-i-push:before { content: '\e842'; } /* '' */
+.gpn-i-summa:before { content: '\e843'; } /* '' */
+.gpn-i-temperatura:before { content: '\e844'; } /* '' */
+.gpn-i-timer:before { content: '\e845'; } /* '' */
+.gpn-i-dialog:before { content: '\e846'; } /* '' */
+.gpn-i-dont-watch:before { content: '\e847'; } /* '' */
+.gpn-i-hierarhy:before { content: '\e848'; } /* '' */
+.gpn-i-like:before { content: '\e849'; } /* '' */
+.gpn-i-link:before { content: '\e84a'; } /* '' */
+.gpn-i-mail:before { content: '\e84b'; } /* '' */
+.gpn-i-message:before { content: '\e84c'; } /* '' */
+.gpn-i-man:before { content: '\e84d'; } /* '' */
+.gpn-i-peoples:before { content: '\e84e'; } /* '' */
+.gpn-i-phone:before { content: '\e84f'; } /* '' */
+.gpn-i-question:before { content: '\e850'; } /* '' */
+.gpn-i-send:before { content: '\e851'; } /* '' */
+.gpn-i-tech-support:before { content: '\e852'; } /* '' */
+.gpn-i-tie:before { content: '\e853'; } /* '' */
+.gpn-i-watch:before { content: '\e854'; } /* '' */
+.gpn-i-azs:before { content: '\e855'; } /* '' */
+.gpn-i-dobycha:before { content: '\e856'; } /* '' */
+.gpn-i-cepochka:before { content: '\e857'; } /* '' */
+.gpn-i-collaboraciya:before { content: '\e858'; } /* '' */
+.gpn-i-economika:before { content: '\e859'; } /* '' */
+.gpn-i-kompetenciyi:before { content: '\e85a'; } /* '' */
+.gpn-i-laboratoriya:before { content: '\e85b'; } /* '' */
+.gpn-i-logistika:before { content: '\e85c'; } /* '' */
+.gpn-i-nb:before { content: '\e85d'; } /* '' */
+.gpn-i-neft:before { content: '\e85e'; } /* '' */
+.gpn-i-nefteprodukt:before { content: '\e85f'; } /* '' */
+.gpn-i-npz:before { content: '\e860'; } /* '' */
+.gpn-i-pasportizacia:before { content: '\e861'; } /* '' */
+.gpn-i-pererabotka:before { content: '\e862'; } /* '' */
+.gpn-i-perevalka:before { content: '\e863'; } /* '' */
+.gpn-i-plan:before { content: '\e864'; } /* '' */
+.gpn-i-radar:before { content: '\e865'; } /* '' */
+.gpn-i-servis:before { content: '\e866'; } /* '' */
+.gpn-i-signalizacia:before { content: '\e867'; } /* '' */
+.gpn-i-sputnik:before { content: '\e868'; } /* '' */
+.gpn-i-transportirovka:before { content: '\e869'; } /* '' */
+.gpn-i-znaniya:before { content: '\e86a'; } /* '' */
+.gpn-i-artficial-intelligence:before { content: '\e86b'; } /* '' */
+.gpn-i-brain:before { content: '\e86c'; } /* '' */
+.gpn-i-briefcase:before { content: '\e86d'; } /* '' */
+.gpn-i-competencies:before { content: '\e86e'; } /* '' */
+.gpn-i-cycle_1:before { content: '\e86f'; } /* '' */
+.gpn-i-desctop:before { content: '\e870'; } /* '' */
+.gpn-i-disk:before { content: '\e871'; } /* '' */
+.gpn-i-home:before { content: '\e872'; } /* '' */
+.gpn-i-idea:before { content: '\e873'; } /* '' */
+.gpn-i-imbalance:before { content: '\e874'; } /* '' */
+.gpn-i-key:before { content: '\e875'; } /* '' */
+.gpn-i-laptop:before { content: '\e876'; } /* '' */
+.gpn-i-life-line:before { content: '\e877'; } /* '' */
+.gpn-i-map:before { content: '\e878'; } /* '' */
+.gpn-i-modeling:before { content: '\e879'; } /* '' */
+.gpn-i-purce:before { content: '\e87a'; } /* '' */
+.gpn-i-repair:before { content: '\e87b'; } /* '' */
+.gpn-i-resheduling:before { content: '\e87c'; } /* '' */
+.gpn-i-2nd-event:before { content: '\e87d'; } /* '' */
+.gpn-i-bussines-process:before { content: '\e87e'; } /* '' */
+.gpn-i-cake:before { content: '\e87f'; } /* '' */
+.gpn-i-crossfunctional:before { content: '\e880'; } /* '' */
+.gpn-i-crown:before { content: '\e881'; } /* '' */
+.gpn-i-flash:before { content: '\e882'; } /* '' */
+.gpn-i-newyear:before { content: '\e883'; } /* '' */
+.gpn-i-objective:before { content: '\e884'; } /* '' */
+.gpn-i-support:before { content: '\e885'; } /* '' */
+.gpn-i-timer1:before { content: '\e886'; } /* '' */
+.gpn-i-tropghy:before { content: '\e887'; } /* '' */
+.gpn-i-objective2:before { content: '\e888'; } /* '' */
+.gpn-i-pin:before { content: '\e889'; } /* '' */
+.gpn-i-event:before { content: '\e88a'; } /* '' */
+.gpn-i-gift:before { content: '\e88b'; } /* '' */
+.gpn-i-cycle:before { content: '\e88c'; } /* '' */
+.gpn-i-down:before { content: '\e88d'; } /* '' */
+.gpn-i-down1:before { content: '\e88e'; } /* '' */
+.gpn-i-down2:before { content: '\e88f'; } /* '' */
+.gpn-i-left:before { content: '\e890'; } /* '' */
+.gpn-i-left1:before { content: '\e891'; } /* '' */
+.gpn-i-left2:before { content: '\e892'; } /* '' */
+.gpn-i-perehod-nazad:before { content: '\e893'; } /* '' */
+.gpn-i-perehod-vpered:before { content: '\e894'; } /* '' */
+.gpn-i-resize:before { content: '\e895'; } /* '' */
+.gpn-i-right:before { content: '\e896'; } /* '' */
+.gpn-i-right1:before { content: '\e897'; } /* '' */
+.gpn-i-right2:before { content: '\e898'; } /* '' */
+.gpn-i-trend-down:before { content: '\e899'; } /* '' */
+.gpn-i-trend-up:before { content: '\e89a'; } /* '' */
+.gpn-i-up:before { content: '\e89b'; } /* '' */
+.gpn-i-up1:before { content: '\e89c'; } /* '' */
+.gpn-i-up2:before { content: '\e89d'; } /* '' */
+.gpn-i-vniz-na-uroven:before { content: '\e89e'; } /* '' */
+.gpn-i-vverh-na-uroven:before { content: '\e89f'; } /* '' */
+.gpn-i-aero:before { content: '\e8a0'; } /* '' */
+.gpn-i-benzovoz:before { content: '\e8a1'; } /* '' */
+.gpn-i-jd:before { content: '\e8a2'; } /* '' */
+.gpn-i-tanker:before { content: '\e8a3'; } /* '' */
+.gpn-i-truboprovod:before { content: '\e8a4'; } /* '' */
+.gpn-i-razmetka:before { content: '\e8a5'; } /* '' */
+.gpn-i-redaktirovat:before { content: '\e8a6'; } /* '' */
+.gpn-i-refresh:before { content: '\e8a7'; } /* '' */
+.gpn-i-rubl:before { content: '\e8a8'; } /* '' */
+.gpn-i-setka:before { content: '\e8a9'; } /* '' */
+.gpn-i-sloi:before { content: '\e8aa'; } /* '' */
+.gpn-i-sohranit:before { content: '\e8ab'; } /* '' */
+.gpn-i-translyaciya:before { content: '\e8ac'; } /* '' */
+.gpn-i-umenshit:before { content: '\e8ad'; } /* '' */
+.gpn-i-uvelichit:before { content: '\e8ae'; } /* '' */
+.gpn-i-sortirovka:before { content: '\e8af'; } /* '' */
+.gpn-i-vlozheniye:before { content: '\e8b0'; } /* '' */
+.gpn-i-vnimaniye:before { content: '\e8b1'; } /* '' */
+.gpn-i-vygruzit:before { content: '\e8b2'; } /* '' */
+.gpn-i-vyhod:before { content: '\e8b3'; } /* '' */
+.gpn-i-zagruzit-disk:before { content: '\e8b4'; } /* '' */
+.gpn-i-zagruzut:before { content: '\e8b5'; } /* '' */
+.gpn-i-zapusk:before { content: '\e8b6'; } /* '' */
+.gpn-i-calculator:before { content: '\e8b7'; } /* '' */
+.gpn-i-calendar:before { content: '\e8b8'; } /* '' */
+.gpn-i-check:before { content: '\e8b9'; } /* '' */
+.gpn-i-decline:before { content: '\e8ba'; } /* '' */
+.gpn-i-dobavit:before { content: '\e8bb'; } /* '' */
+.gpn-i-dollar:before { content: '\e8bc'; } /* '' */
+.gpn-i-euro:before { content: '\e8bd'; } /* '' */
+.gpn-i-filtr:before { content: '\e8be'; } /* '' */
+.gpn-i-info:before { content: '\e8bf'; } /* '' */
+.gpn-i-istoriya:before { content: '\e8c0'; } /* '' */
+.gpn-i-izmenit-razmer:before { content: '\e8c1'; } /* '' */
+.gpn-i-korzina:before { content: '\e8c2'; } /* '' */
+.gpn-i-legenda:before { content: '\e8c3'; } /* '' */
+.gpn-i-lineyka:before { content: '\e8c4'; } /* '' */
+.gpn-i-lokaciya:before { content: '\e8c5'; } /* '' */
+.gpn-i-nastroiki:before { content: '\e8c6'; } /* '' */
+.gpn-i-pausa:before { content: '\e8c7'; } /* '' */
+.gpn-i-pausa1:before { content: '\e8c8'; } /* '' */
+.gpn-i-pechat:before { content: '\e8c9'; } /* '' */
+.gpn-i-pereimenovat:before { content: '\e8ca'; } /* '' */
+.gpn-i-pereslat:before { content: '\e8cb'; } /* '' */
+.gpn-i-poisk:before { content: '\e8cc'; } /* '' */
+.gpn-i-raskr-spisok1:before { content: '\e8cd'; } /* '' */
+.gpn-i-raskr-spisok2:before { content: '\e8ce'; } /* '' */

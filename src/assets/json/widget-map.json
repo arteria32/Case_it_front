@@ -1,0 +1,30 @@
+{
+  "nameCase": "Левый поток",
+  "sizeCase":3,
+  "maxSizeCase":3,
+   "widgetMap":[{
+    "nameWidget": "Cодержание серы",
+    "typeWidget":"loadingChart",
+    "sizeWidget":1,
+    "maxParams":12,
+    "paramsTag":["L24_9S_out", "L24_9S_out", "ONPZ_S1_prediction"],
+    "maxScale":200,
+    "paramsName":["Модель", "Факт"]
+  }, {
+    "nameWidget": "Загрузка блока",
+    "typeWidget":"list",
+    "sizeWidget":1,
+    "maxParams":12,
+    "paramsTag":["L24_9S_out"],
+    "paramsName":["Модель", "Факт"],
+    "maxScale":400
+  }, {
+    "nameWidget": "Температура на входе",
+    "typeWidget":"modelChart",
+    "sizeWidget":"1",
+    "maxParams":"12",
+    "paramsTag":["ONPZ_S1_prediction", "ONPZ_T_B1_diff_rec", "ONPZ_S1_prediction", "L24_9F3100", "ONPZ_T_B1_diff_rec", "L24_9T1247"],
+    "paramsName":["Модель2", "Модель 1"],
+    "maxScale":8
+  }]
+}

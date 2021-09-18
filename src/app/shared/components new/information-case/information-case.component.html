@@ -1,0 +1,36 @@
+<div class="dx-card body">
+    <div class="dx-card-header">
+        <img class="dx-icon-left" src="assets/svg/i-set-h.svg">
+        <div class="dx-card-header-text">
+            Информационная витрина
+        </div>
+        <div class="right-tab">
+
+            <img class="dx-icon-right" src="assets/svg/i-more.svg">
+        </div>
+    </div>
+    <dx-scroll-view class="full-height-scrollable">
+
+<div class="body-list">
+    <div class="info-case-tab">
+        <div class="conteiner-tab">
+            <div  class="widget-body-tab" *ngFor="let widget of widgetMap">
+                <div class="widget-title">{{widget.nameWidget}}  </div>
+                                <div class="switch-tab" [ngSwitch]="widget.typeWidget">
+                    <list-widget *ngSwitchCase="'list'" [inputParams]="widget.paramsTag">
+                    </list-widget>
+                    <load-widget *ngSwitchCase="'loadingChart'" [inputParams]="widget.paramsTag" [maxScale]="widget.maxScale">
+                    </load-widget>
+                    <model-widget *ngSwitchCase="'modelChart'" [inputParams]="widget.paramsTag" [maxScale]="widget.maxScale">
+                    </model-widget>
+
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div> 
+ 
+
+</dx-scroll-view>
+</div>

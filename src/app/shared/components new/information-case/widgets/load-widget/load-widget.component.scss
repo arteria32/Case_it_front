@@ -1,0 +1,29 @@
+:host{
+    padding: 5px;
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+}
+
+
+.title-tab{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.unit-title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #b1b1b1;
+}

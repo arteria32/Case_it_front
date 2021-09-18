@@ -1,0 +1,36 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center
+}
+.content-list{
+  background: #f7f7f9;
+  border-radius: 5px;
+  min-width: 150px;
+  max-width: 200px;
+  min-height: 50px;
+  margin: 10px;
+  padding: 5px;
+}
+.name-param-list{
+width: auto;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+color:#337ab7;
+}
+.value-param-list{
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+.value-text{
+  margin-right: 5px;
+  color: #1b3a75bd;
+}
+.value-param{
+  font-weight: bold;
+  font-size: 14px;
+}

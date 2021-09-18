@@ -1,0 +1,118 @@
+<div class="dx-card body">
+    <div class="dx-card-header">
+        <img class="dx-icon-left" src="assets/svg/i-set-h.svg">
+        <div class="dx-card-header-text">
+            Рекомендации
+        </div>
+        <div class="right-tab">
+
+            <img class="dx-icon-right" src="assets/svg/i-more.svg">
+        </div>
+    </div>
+    <dx-scroll-view class="full-height-scrollable">
+        <div class='body-list'>
+            <dx-list id="tasks-list" [showSelectionControls]="false" [dataSource]="dataRecom"
+                [pullRefreshEnabled]="false"
+                (onPageLoading)="updateData($event)"
+                nextButtonText="Больше"
+                >
+
+                <dxo-scroll-bar [visible]="true"></dxo-scroll-bar>
+                <div *dxTemplate="let data of 'item'" class="recom-tab" (click)="toogleVisCalc(data)" [attr.title]="'Id События:'+data.id">
+                    <div class="recom-com">
+                        {{data.content}}
+                    </div>
+                    <div class="recom-time">
+                        <img src="assets/svg/i-timer.svg">
+                        <div class="recom-time-num">
+                            {{data.date}}
+                        </div>
+                    </div>
+                    <dx-popup title="Результат расчёта ЦД и ОО" [(visible)]="data.visRecomInfo" [shading]='false'
+                        [resizeEnabled]='true' [width]="1400" [height]="800">
+                        
+                        <dx-scroll-view>
+                            <dx-data-grid   *ngIf="data.eventType.id==0" id=data-grid [showColumnLines]="true" [dataSource]="data.informationDataSource"
+                            columnResizingMode="nextColumn" 
+                            [allowColumnResizing]="true"
+                            (onExporting)="onExporting($event,data.date)"
+                            >
+                                <dxo-export [enabled]="true"></dxo-export>
+
+                                <dxo-scrolling mode="virtual"></dxo-scrolling>
+                                <dxo-load-panel [enabled]="false"></dxo-load-panel>
+                                <dxi-column dataField="tag" caption="Тег" cellTemplate="tagValue"></dxi-column>
+                                <dxi-column dataField="description" caption="Название" [width]='200'></dxi-column>
+                                <dxi-column dataField="unit" caption="Ед.измерения" [width]='50'></dxi-column>
+
+                                <dxi-column dataField="factValue" caption="Факт" [allowEditing]="false" cellTemplate="checkCellTemplate"></dxi-column>
+                                <dxi-column dataField="Ub" caption="Верх. ограничение СУУТП"  cellTemplate="checkScaleTemplate" ></dxi-column>
+                                <dxi-column dataField="Lb" caption="Ниж. ограничение СУУТП"  cellTemplate="checkScaleTemplate" ></dxi-column>
+                                <dxi-column dataField="scaleMax" caption="Верх. ограничение RTO " cellTemplate="scaleCellTemplate"></dxi-column>
+
+                                <dxi-column dataField="optValue" caption="Оптимальная цель СУУТП"  cellTemplate="checkCellTemplate">
+                                </dxi-column>
+                               
+                                <dxi-column dataField="scaleMin"    caption="Ниж. ограничение RTO" cellTemplate="scaleCellTemplate"></dxi-column>
+                                <dxi-column dataField="statusInfo" caption="Управление" cellTemplate="statusCellTemplate">
+                                     <dxo-lookup
+                                    [dataSource]="statusInfoLookup"
+                                    valueExpr="id"
+                                    displayExpr="status">
+                                </dxo-lookup> 
+                                </dxi-column>
+
+                                <dxi-column dataField="controller" caption="Контроллеры " [groupIndex]="0" [sortingMethod]="sortFunc"
+                                    [visible]="false" groupCellTemplate="groupTemplate"></dxi-column>
+                                <div *dxTemplate="let itemData of 'groupTemplate'">
+                                    <div *ngIf="itemData.value">
+                                        {{itemData.text}}
+                                    </div>
+                                </div>
+                                <div *dxTemplate="let cell of 'tagValue'">
+                                    <div  [ngClass]="{'status-rto':(cell.data.statusInfo==1)}">{{cell.text}}</div>
+                                </div>
+                                <div *dxTemplate="let cell of 'checkScaleTemplate'">
+                                    <div>
+                                        <div [ngClass]="{'warning-scale':!checkScaleValue(cell)}">
+                                            {{cell.text}}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div *dxTemplate="let cell of 'checkCellTemplate'">
+                                    <div  >
+                                        <div [ngClass]="{'warning':!checkCorrectValue(cell)}">
+                                            {{cell.text}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div *dxTemplate="let cell of 'statusCellTemplate'">
+                                    <div>
+                                        
+                                        <div [ngClass]="{'status-rto':(cell.value==1)}">
+                                            {{cell.text}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div *dxTemplate="let cell of 'scaleCellTemplate'">
+                                    <div  >
+                                        <div class="scale-cell">
+                                            {{cell.text}}
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </dx-data-grid>
+                            <div *ngIf="data.eventType.id==10">
+                                <div *ngFor="let item of data.informationDataSource">
+                                    {{item}}
+                                </div>
+                            </div>
+                        </dx-scroll-view>
+                    </dx-popup>
+                </div>
+            </dx-list>
+        </div>
+    </dx-scroll-view>
+</div>

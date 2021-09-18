@@ -1,0 +1,38 @@
+.recom-tab{
+    background:   #272A38;
+    height: 90px;
+    margin: 4px;
+    padding: 16px;
+}
+.recom-com{
+    color: #D7E2F2;
+    font-size: 13px;
+    line-height: 18px;
+    white-space: normal;    
+}
+.recom-time{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: #8C99B2;
+    font-size: 13px;
+line-height: 16px;
+}
+.recom-time-num{
+    margin-left: 6px;
+}
+#data-grid{
+    height: 87%;
+}
+.warning{
+    color: #FF1D25;
+}
+.warning-scale{
+    color: #F7931E;
+}
+.scale-cell{
+    color: #00A73D;
+}
+.status-rto{
+    color: #0089FF;
+}

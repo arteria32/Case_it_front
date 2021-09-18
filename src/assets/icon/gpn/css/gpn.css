@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'gpn';
+  src: url('../font/gpn.eot?4101408');
+  src: url('../font/gpn.eot?4101408#iefix') format('embedded-opentype'),
+       url('../font/gpn.woff2?4101408') format('woff2'),
+       url('../font/gpn.woff?4101408') format('woff'),
+       url('../font/gpn.ttf?4101408') format('truetype'),
+       url('../font/gpn.svg?4101408#gpn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'gpn';
+    src: url('../font/gpn.svg?4101408#gpn') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "gpn";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-gpn-calendar:before { content: '\e800'; } /* '' */
+.icon-gpn-clock:before { content: '\e801'; } /* '' */
+.icon-gpn-cross:before { content: '\e802'; } /* '' */
+.icon-gpn-doc:before { content: '\e803'; } /* '' */
+.icon-gpn-droplet:before { content: '\e804'; } /* '' */
+.icon-gpn-ellipsis:before { content: '\e805'; } /* '' */
+.icon-gpn-moon:before { content: '\e806'; } /* '' */
+.icon-gpn-oil-drums:before { content: '\e807'; } /* '' */
+.icon-gpn-ok-circ:before { content: '\e808'; } /* '' */
+.icon-gpn-pc1:before { content: '\e809'; } /* '' */
+.icon-gpn-picture:before { content: '\e80a'; } /* '' */
+.icon-gpn-plus:before { content: '\e80b'; } /* '' */
+.icon-gpn-plus-circ:before { content: '\e80c'; } /* '' */
+.icon-gpn-search:before { content: '\e80d'; } /* '' */
+.icon-gpn-sun:before { content: '\e80e'; } /* '' */
+.icon-gpn-arrow-d:before { content: '\e80f'; } /* '' */
+.icon-gpn-back-circular:before { content: '\e810'; } /* '' */

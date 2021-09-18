@@ -1,0 +1,109 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+
+.temp-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-left: 5px;
+
+  .value-bottom {
+    margin-left: 5px;
+  }
+}
+
+.conteinter-temp {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  margin-left: 5px;
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+  height: 140px;
+}
+
+.temp-name {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  width: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.temp-text{
+text-overflow: ellipsis;
+overflow: hidden;
+max-width: 100px;
+}
+.temper {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  text-align: center;
+  font-size: 0.8em;
+  color: #818596;
+  line-height: normal;
+}
+
+#circleModel {
+  margin-right: 5px;
+  background: #33a1ff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+#circleFact {
+  margin-right: 5px;
+  background: #a2e2ff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+::ng-deep .value-present-pf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  height: auto;
+  font-weight: bold;
+}
+
+.title-tab{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-title{
+  font-size: 18px;
+  font-weight: bold;
+}
+.unit-title{
+  font-size: 14px;
+  font-weight: bold;
+  color: #b1b1b1;
+}
+.chart-tab{
+  display: flex;
+}

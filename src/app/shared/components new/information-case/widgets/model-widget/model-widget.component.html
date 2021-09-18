@@ -1,0 +1,82 @@
+<div class="chart-tab" *ngIf="dataSource">
+<dx-circular-gauge *ngIf="delta"
+id="circularGauge"
+[value]="delta"
+>
+<dxo-geometry
+            [startAngle]="90"
+            [endAngle]="90">
+        </dxo-geometry>
+
+<dxo-value-indicator
+    type="rangebar"
+    [color]="color"
+    size="5"
+                     offset="-5">
+</dxo-value-indicator>
+<dxo-range-container [width]="6" >
+  <dxi-range [startValue]="0" [endValue]="maxScale" [color]="colorBg"></dxi-range>
+
+</dxo-range-container >
+<dxo-size
+[height]="120"
+[width]="120">
+</dxo-size>
+<dxo-tooltip
+[enabled]="true">
+
+</dxo-tooltip>
+<dxo-scale
+[startValue]="0"
+[endValue]="maxScale"
+[tickInterval]="maxScale/4"
+>
+<dxo-label indentFromTick="0" [visible]="false">
+</dxo-label>
+</dxo-scale>
+<!-- <dxo-title
+[text]="'Δ: '+deltaTitle.toFixed(2)+' '+dataSource[0].unit"
+horizontalAlignment="center"
+verticalAlignment="bottom">
+
+<dxo-font
+[size]="18"
+[color]="color"
+weight="600">
+</dxo-font>
+</dxo-title> -->
+</dx-circular-gauge>
+<div *ngIf="dataSource" class="title-tab">
+  <div class="main-title">
+    {{deltaTitle.toFixed(2)}} 
+  </div>
+  <div class="unit-title">
+      {{dataSource[0].unit}}
+  </div>
+</div>
+</div>
+<div class="temp-tab"  *ngIf="delta">
+    <div class="temper" [attr.title]="dataSource[0].tag +' / '+dataSource[0].date" >
+      <div class='temp-name'>
+      <div id="circleModel"></div>
+      <div class="temp-text">
+        {{paramsName[0]}} 
+      </div>
+    </div>
+    <div class="value-bottom value-present-pf">
+      <div>{{dataSource[0].value ? dataSource[0].value.toFixed(2) : 0}}</div>
+    </div>
+  </div>
+    <div class="temper" [attr.title]="dataSource[1].tag +' / '+dataSource[1].date"  >
+      <div class='temp-name'>
+      <div id="circleFact"></div>
+      <div class="temp-text">
+        {{paramsName[1]}}
+      </div>
+    </div>
+    <div class="value-present-pf value-bottom ">
+        <div>{{dataSource[1].value ? dataSource[1].value.toFixed(2) : 0}}</div>
+    </div>
+  </div>
+
+</div>

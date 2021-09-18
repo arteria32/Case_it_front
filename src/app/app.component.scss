@@ -1,0 +1,210 @@
+@import "../styles.scss";
+
+body{
+    background: $bg-color;
+    display: flex;
+    flex-direction: column;
+}
+::ng-deep * {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    height: 6vh;
+    width: 100%;
+}
+.tab-page{
+    width: initial;
+    background: $bg-color ;
+}
+::ng-deep .dx-card  {
+background:$body-color;
+border: 1px solid #272A38;
+box-sizing: border-box;
+border-radius: 0px 0px 2px 2px; 
+margin: 4px;
+height: 98%;
+
+}
+
+::ng-deep .dx-card-header  {
+    background:$list-color;
+padding: 12px;
+display: flex; flex-wrap: nowrap;
+height: 40px;
+
+}
+
+
+::ng-deep .dx-card-header-text  {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px; 
+    color:$text-color-0;
+    display: flex;
+    align-items: center;
+}
+::ng-deep .dx-field:last-of-type {
+    margin: 10px 16px 4px  ; 
+  }
+::ng-deep .dx-field{
+    margin: 10px 16px 4px   ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+::ng-deep .dx-field-label{
+    font-size: 11px;
+    line-height: 16px;
+    color: $text-color-5;
+    margin-bottom: 8px;
+    width: 100%;
+}
+::ng-deep .dx-field-value{
+    box-sizing: border-box;
+}
+
+::ng-deep .dx-list-item{
+    margin: 4px;
+    width: 97%;
+}
+
+::ng-deep .dx-selectbox-container{
+    border: 1px solid #4B5169;
+}
+::ng-deep .dx-selectbox .dx-texteditor-input:read-only {
+    cursor: pointer;
+   padding: 8px;
+}
+
+::ng-deep   .add-info-tab{
+    background: #303549;
+    padding: 2px 8px;
+border-radius: 2px;
+color: $text-color-5;
+}
+
+::ng-deep .dx-datagrid{
+    background: none;
+}
+
+
+::ng-deep .mat-button-toggle-group{
+    height: 24px;
+    width: 80px;
+}
+
+::ng-deep .mat-button-toggle-label-content {
+    font-size: 13px;
+line-height: 16px !important ;
+color: $text-color-5;
+}
+
+::ng-deep .mat-button-toggle{
+    display: flex;
+    align-items: center;
+}
+
+::ng-deep .mat-button-toggle-appearance-standard{
+    background: #272A38;
+}
+
+::ng-deep .mat-button-toggle{
+    border: 1.5px solid #4B5169;
+    width:50%   
+    
+}
+
+::ng-deep .mat-button-toggle-checked{
+    background: rgba(0, 137, 255, 0.2);
+}
+
+::ng-deep .right-tab{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+::ng-deep.dx-scrollview-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+::ng-deep .dx-button-content{
+    display: flex;
+    align-items: center;
+    padding: 10px ;
+    background:#303549;
+}
+::ng-deep .dx-button{
+    -webkit-box-shadow: none;
+    box-shadow: none;   
+}
+::ng-deep .dx-button:focus{
+    -webkit-box-shadow: none;
+    box-shadow: none;   
+}
+
+::ng-deep  .dx-popup-title.dx-toolbar{
+    background: #272A38;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 40px;
+}
+
+::ng-deep .dx-popup-title.dx-toolbar .dx-toolbar-items-container{
+    height: 100%;
+}
+
+::ng-deep .dx-popup-content{
+    background: #1C1F2B;
+}
+
+::ng-deep .main-tab-value{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin:6px;
+}
+::ng-deep .main-left-tab{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 13px;
+line-height: 16px;
+}
+::ng-deep .value-tab{
+color: #FFFFFF;
+}
+::ng-deep .add-tab{
+    margin-left: 4px;
+    color: #8C99B2;
+}
+::ng-deep .main-right-tab{
+    font-size: 21px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+::ng-deep .full-height-scrollable{
+    padding-bottom: 40px;
+}
+
+::ng-deep .dx-datagrid-header-panel{
+    background: none;
+}
+
+::ng-deep .dx-toolbar {
+    background: none;
+}
+
+:ng-deep .dx-tooltip-wrapper .dx-popover-wrapper {  
+    background:  red;
+}  
+::ng-deep .dx-button.dx-button-default{
+    color: white;
+}

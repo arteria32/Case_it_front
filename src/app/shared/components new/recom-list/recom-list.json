@@ -1,0 +1,10 @@
+[{
+  "o": "Benz.ECP:Optimum",
+  "f": ["Benz.ECP:Fact","Benz.ECP:Optimum_HH","Benz.ECP:Optimum_LL"]
+}, {
+  "o": "TS.ECP:Optimum",
+  "f": ["TS.ECP:Fact","TS.ECP:Optimum_HH","TS.ECP:Optimum_LL"]
+}, {
+  "o": "DT.ECP:Optimum",
+  "f": ["DT.ECP:Fact","DT.ECP:Optimum_HH","DT.ECP:Optimum_LL"]
+}]

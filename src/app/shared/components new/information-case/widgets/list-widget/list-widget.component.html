@@ -1,0 +1,13 @@
+<dx-scroll-view [height]="180">
+    <div *ngFor="let data of dataSource" >
+        <div [attr.title]="data.tag"  class="content-list">
+            <div class="header-micro-graph" >
+              <span class="name-param-list">{{data.descriptor}}</span>
+          </div>
+          <div class="value-param-list" >
+              <span class="value-text value-param" >{{data.value.toFixed(2)}} {{data.unit}}</span> <span class="value-text" >{{data.date}}</span>
+          </div>
+    
+          </div>
+    </div>
+</dx-scroll-view>
