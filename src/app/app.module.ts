@@ -6,7 +6,6 @@ import {
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
-import { WorkSchemeWidgetComponent } from './shared/components new/work-scheme/work-scheme-widget.component';
 import { ApiService } from './shared/services/api.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DxoScrollBarModule } from 'devextreme-angular/ui/nested';
@@ -31,7 +30,6 @@ import { StatusInfoWidgetComponent } from './shared/components new/status-infoba
     AppComponent,
     MainPageComponent,
     RecomListWidgetComponent,
-    WorkSchemeWidgetComponent,
     MainHeaderComponent,
     InformationCaseComponent,
     ModelWidgetComponent,
