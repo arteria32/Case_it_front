@@ -17,8 +17,8 @@
                 >
 
                 <dxo-scroll-bar [visible]="true"></dxo-scroll-bar>
-                <div *dxTemplate="let data of 'item'" class="recom-tab" >
-                    <div class="recom-com">
+                <div *dxTemplate="let data of 'item'" class="recom-tab"  [class]="data.status">
+                    <div class="recom-com"  [ngClass]="{good:data.status=='good',bad:data.status=='bad'}"  >
                         {{data.description}}
                     </div>
                     <div class="recom-time">
