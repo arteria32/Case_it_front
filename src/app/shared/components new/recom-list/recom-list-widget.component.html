@@ -11,15 +11,15 @@
     </div>
     <dx-scroll-view class="full-height-scrollable">
         <div class='body-list'>
-            <dx-list id="tasks-list" [showSelectionControls]="false" [dataSource]="dataRecom"
+            <dx-list id="tasks-list" [showSelectionControls]="false" [dataSource]="dataSource"
                 [pullRefreshEnabled]="false"
                 nextButtonText="Больше"
                 >
 
                 <dxo-scroll-bar [visible]="true"></dxo-scroll-bar>
-                <div *dxTemplate="let data of 'item'" class="recom-tab" [attr.title]="'Id События:'+data.id">
+                <div *dxTemplate="let data of 'item'" class="recom-tab" >
                     <div class="recom-com">
-                        {{data.content}}
+                        {{data.description}}
                     </div>
                     <div class="recom-time">
                         <img src="assets/svg/i-timer.svg">

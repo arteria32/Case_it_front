@@ -11,22 +11,13 @@ import { EventInfo } from '../../models/i-eventInfo';
   styleUrls: ['./recom-list-widget.component.scss']
 })
 
-export class RecomListWidgetComponent {
-  visRecomInfo = false;
-  dataRecom: any = [];
-  staticInformationDa = [];
-  statusInfoLookup = [
-    {
-      id: 1, status: 'RTO'
-    }]
+export class RecomListWidgetComponent implements OnInit {
+  dataSource: any;
+  constructor(private http: HttpClient) {
 
-  public configWidget = {
-    widgetName: "RecomList",
-    typeWidgetProvider: 'ContextParam'
   }
-  dataSource: EventInfo[] = [];
-  constructor() {
-  
+  async ngOnInit() {
+    this.dataSource = await this.http.get('assets/json/recom-list.json').toPromise()
   }
 
 
