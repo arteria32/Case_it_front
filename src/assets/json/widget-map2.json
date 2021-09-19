@@ -1,0 +1,24 @@
+{
+  "nameCase": "Прогноз работы",
+  "sizeCase":3,
+  "maxSizeCase":3,
+   "widgetMap":[{
+    "nameWidget": "Вес на крюке",
+    "typeWidget":"loadingChart",
+    "value":35,
+    "maxValue":46,
+    "unit":"Т"
+  }, {
+    "nameWidget": "Крутящий момент",
+    "typeWidget":"loadingChart",
+    "value":1100,
+    "maxValue":1200,
+    "unit":"Н*м"
+      }, {
+    "nameWidget": "Давление на вык. линии",
+    "typeWidget":"loadingChart",
+    "value":17,
+    "maxValue":20,
+    "unit":"МПа"
+  }]
+}

@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { ScriptSettingsService } from '../../services/srcipt-settings.service';
 
 @Component({
   selector: 'main-header',
@@ -7,11 +8,14 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./main-header.component.scss']
 })
 export class MainHeaderComponent implements OnInit {
-  constructor() { 
+  constructor(private scriptService:ScriptSettingsService) { 
   }
   selectedScript="Исходное состояние";
-  scriptData=["Исходное состояние","Предсказание ЧП","Рекомендации по корректировке работы буровой","Моделирование ситуции"]
+  scriptData=["Исходное состояние","Предсказание ЧП"]
   ngOnInit() {
   }
-
+  pushScript(e:any){
+  console.log(e)
+  this.scriptService.changePlant(e.value);
+  }
 }

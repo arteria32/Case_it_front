@@ -7,10 +7,9 @@ export class ScriptSettingsService {
   constructor(private http: HttpClient, ) {
   }
   private static selectedPlant = new Subject<string>();
-  private static selectedProd = new Subject<string>();
   selectedPlant$ = ScriptSettingsService.selectedPlant.asObservable();
-  selectedProd$ = ScriptSettingsService.selectedProd.asObservable();
   changePlant(newPlant:string){
+    console.log(newPlant)
     ScriptSettingsService.selectedPlant.next(newPlant);
   }
   

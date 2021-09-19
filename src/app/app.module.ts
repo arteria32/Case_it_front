@@ -6,7 +6,6 @@ import {
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
-import { ApiService } from './shared/services/api.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DxoScrollBarModule } from 'devextreme-angular/ui/nested';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
@@ -24,6 +23,7 @@ import { ModelWidgetComponent } from './shared/components new/information-case/w
 import { ListWidgetComponent } from './shared/components new/information-case/widgets/list-widget/list-widget.component';
 import { LoadWidgetComponent } from './shared/components new/information-case/widgets/load-widget/load-widget.component';
 import { StatusInfoWidgetComponent } from './shared/components new/status-infobar/status-info-widget.component';
+import { ScriptSettingsService } from './shared/services/srcipt-settings.service';
 
 @NgModule({
   declarations: [
@@ -60,7 +60,7 @@ import { StatusInfoWidgetComponent } from './shared/components new/status-infoba
     ReactiveFormsModule,
     DxCircularGaugeModule,
   ],
-  providers: [ApiService,
+  providers: [ScriptSettingsService,
     { provide: MAT_DATE_LOCALE, useValue: 'ru-RU' },
   ],
   bootstrap: [AppComponent]

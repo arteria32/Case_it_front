@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/api.service';
 import { HttpClient } from '@angular/common/http';
 import * as moment from 'moment';
 import { EventInfo } from '../../models/i-eventInfo';

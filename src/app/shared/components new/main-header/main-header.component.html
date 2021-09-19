@@ -7,6 +7,7 @@
             [dataSource]="scriptData"
             [(value)]="selectedScript"
             placeholder="Сценарий MVP"
+            (onValueChanged)="pushScript($event)"
         ></dx-select-box>
         </div>
     </div>
