@@ -24,6 +24,7 @@ import { InformationCaseComponent } from './shared/components new/information-ca
 import { ModelWidgetComponent } from './shared/components new/information-case/widgets/model-widget/model-widget.component';
 import { ListWidgetComponent } from './shared/components new/information-case/widgets/list-widget/list-widget.component';
 import { LoadWidgetComponent } from './shared/components new/information-case/widgets/load-widget/load-widget.component';
+import { StatusInfoWidgetComponent } from './shared/components new/status-infobar/status-info-widget.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { LoadWidgetComponent } from './shared/components new/information-case/wi
     InformationCaseComponent,
     ModelWidgetComponent,
     ListWidgetComponent,
-    LoadWidgetComponent,ModelWidgetComponent
+    LoadWidgetComponent,ModelWidgetComponent,StatusInfoWidgetComponent
   ],
   imports: [
     CommonModule,

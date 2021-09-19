@@ -1,0 +1,53 @@
+<div class="dx-card body">
+  <div class="dx-card-header">
+    <img class="dx-icon-left" src="assets/svg/i-set-h.svg">
+    <div class="dx-card-header-text">
+      Актуальный статус установки
+    </div>
+    <div class="right-tab">
+      <img class="dx-icon-right" src="assets/svg/i-more.svg">
+    </div>
+  </div>
+  <div class='body-list'>
+    <div class="info-case-tab ">
+      <h3>Вероятность аварии</h3>
+      <div>
+        <load-widget [value]="dataSource.chanceStatus.value" [maxValue]="100" unit="%"></load-widget>
+      </div>
+      <div style="padding-top: 40px;">
+        <img style="width: 100%;" src="/assets/svg/calculator.svg">
+      </div>
+    </div>
+    <div class="info-case-tab ">
+      <h3>Состояние установки</h3>
+      <div class="dx-field">
+        <div class="dx-field-label">Статус установки:</div>
+        <div class="dx-field-value">
+          {{dataSource.plantStatus.workStatus}}
+        </div>
+      </div>
+      <div class="dx-field">
+        <div class="dx-field-label">Износ оборудования:</div>
+        <div class="dx-field-value">
+         {{dataSource.plantStatus.deteriorationStatus}}
+        </div>
+      </div>
+      <div class="dx-field">
+        <div class="dx-field-label">Дата проверки:</div>
+        <div class="dx-field-value">
+            {{dataSource.plantStatus.checkDate}}
+        </div>
+      </div>
+      <div class="dx-field main-info">
+        <div class="dx-field-label">Рекомендации:</div>
+        <div class="dx-field-value">
+            {{dataSource.plantStatus.recomendation}}
+
+        </div>
+    </div>
+    <div style="padding-top: 40px;">
+        <img style="width: 100%;" src="/assets/svg/report.svg">
+    </div>
+    </div>
+  </div>
+</div>

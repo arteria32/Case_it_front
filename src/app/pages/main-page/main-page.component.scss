@@ -5,7 +5,7 @@
 }
 
 .small-tab {
-  flex: 1 2 100px;
+  flex: 2 5 100px;
   margin: 2px;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
 }
 
 .large-tab {
-  flex: 2 1 100px;
+  flex: 3 5 100px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -32,3 +32,7 @@
   height: 50%;
 }
 
+
+#status-info-widget{
+  height: max-content;
+}

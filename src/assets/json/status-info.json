@@ -1,0 +1,11 @@
+{
+    "chanceStatus":{
+        "value":50
+    },
+    "plantStatus":{
+        "workStatus":"В работе",
+        "deteriorationStatus":"Высокий",
+        "checkDate":"19.09.2021",
+        "recomendation":"Увеличить плотность бурового раствора"
+    }
+}
