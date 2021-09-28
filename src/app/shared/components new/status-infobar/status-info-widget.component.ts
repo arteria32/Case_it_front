@@ -13,15 +13,11 @@ export class StatusInfoWidgetComponent implements OnInit {
 
  }
   async ngOnInit(): Promise<void> {
-    this.dataSource=await this.http.get('assets/json/status-info.json').toPromise()
+    this.dataSource = await this.http.get('assets/json/info-drill-1.json').toPromise();
     console.log(this.dataSource)
     this.scriptService.selectedPlant$.subscribe(async (item) => {
       console.log(item)
-      if (item == "Предсказание ЧП") {
-        this.dataSource = await this.http.get('assets/json/status-info2.json').toPromise();
-      } else {
-        this.dataSource = await this.http.get('assets/json/status-info.json').toPromise();
-      }
+        this.dataSource = await this.http.get('assets/json/info-drill-1.json').toPromise();
     })
   }
 }

@@ -16,7 +16,8 @@ value:number;
 maxValue:number;
 @Input()
 unit:string;
-
+@Input()
+status:boolean;
   constructor() {
  
   }

@@ -1,32 +1,37 @@
 <div class="dx-card body">
-    <div class="dx-card-header">
-        <img class="dx-icon-left" src="assets/svg/i-set-h.svg">
-        <div class="dx-card-header-text">
-            Информационная витрина
-        </div>
-        <div class="right-tab">
-
-            <img class="dx-icon-right" src="assets/svg/i-more.svg">
-        </div>
+  <div class="dx-card-header">
+    <img class="dx-icon-left" src="assets/svg/i-set-h.svg">
+    <div class="dx-card-header-text">
+      Аналитическая витрина
     </div>
-    <dx-scroll-view class="full-height-scrollable">
+    <div class="right-tab">
 
-<div class="body-list">
-            <div  class="widget-body-tab" *ngFor="let widget of widgetSet.widgetMap">
-                <div class="widget-title">{{widget.nameWidget}}  </div>
-                                <div class="switch-tab" [ngSwitch]="widget.typeWidget">
-                    <list-widget *ngSwitchCase="'list'">
-                    </list-widget>
-                    <load-widget *ngSwitchCase="'loadingChart'"  [value]="widget.value" [maxValue]="widget.maxValue" [unit]="widget.unit">
-                    </load-widget>
-                    <model-widget *ngSwitchCase="'modelChart'">
-                    </model-widget>
+      <img class="dx-icon-right" src="assets/svg/i-more.svg">
+    </div>
+  </div>
+  <dx-scroll-view class="full-height-scrollable">
+
+    <div class="body-list">
+      <div class="widget-body-tab" *ngFor="let widget of widgetSet.widgetMap">
+        <div class="widget-title">{{widget.nameWidget}} </div>
+        <div class="switch-tab" [ngSwitch]="widget.typeWidget">
+          <list-widget *ngSwitchCase="'list'">
+          </list-widget>
+          <load-widget *ngSwitchCase="'loadingChart'" [value]="widget.value" [maxValue]="widget.maxValue"
+            [unit]="widget.unit" [status]="widget.status">
+          </load-widget>
+          <model-widget *ngSwitchCase="'modelChart'">
+          </model-widget>
 
 
         </div>
+      </div>
     </div>
-</div> 
- 
+    <div class="recom-body">
+      <div class="recom-label">Рекомендация:</div>
+      <div class="recom-value">
+        dwqdwq </div>
+    </div>
 
-</dx-scroll-view>
+  </dx-scroll-view>
 </div>

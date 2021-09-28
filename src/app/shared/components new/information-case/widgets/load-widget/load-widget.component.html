@@ -3,7 +3,7 @@ id="circularGauge"
 [value]="value">
 <dxo-value-indicator
     type="rangebar"
-    color="#337ab7"
+    [color]="(status)?'#00A73D':'#FF1D25'"
     [size]="5"
                      [offset]="-5">
 </dxo-value-indicator>
