@@ -1,4 +1,4 @@
-export interface HealthLog{
+export interface ProjectStatus{
     status:string,
     name: string,
     description: string,

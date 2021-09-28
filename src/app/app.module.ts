@@ -24,6 +24,7 @@ import { ListWidgetComponent } from './shared/components new/information-case/wi
 import { LoadWidgetComponent } from './shared/components new/information-case/widgets/load-widget/load-widget.component';
 import { StatusInfoWidgetComponent } from './shared/components new/status-infobar/status-info-widget.component';
 import { ScriptSettingsService } from './shared/services/srcipt-settings.service';
+import { SystemConditionWidgetComponent } from './shared/components new/system-condition/system-condition-wdget.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { ScriptSettingsService } from './shared/services/srcipt-settings.service
     InformationCaseComponent,
     ModelWidgetComponent,
     ListWidgetComponent,
-    LoadWidgetComponent,ModelWidgetComponent,StatusInfoWidgetComponent
+    LoadWidgetComponent,ModelWidgetComponent,StatusInfoWidgetComponent,SystemConditionWidgetComponent
   ],
   imports: [
     CommonModule,

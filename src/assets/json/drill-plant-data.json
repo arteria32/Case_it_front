@@ -1,0 +1,56 @@
+[{
+    "status":"Healthy",
+    "name": "Скважина №1",
+    "description": "Работает"
+},
+{
+    "status":"Healthy",
+    "name": "Скважина №2",
+    "description": "Работает"
+},
+{
+    "status":"Error",
+    "name": "Скважина №3",
+    "description": "Авария"
+},
+{
+    "status":"Healthy",
+    "name": "Скважина №4",
+    "description": "Тех.обслуживание"
+},
+{
+    "status":"Healthy",
+    "name": "Скважина №5",
+    "description": "Работает"
+},
+{
+    "status":"Unhealthy",
+    "name": "Скважина №6",
+    "description": "Ремонт"
+},
+{
+    "status":"Healthy",
+    "name": "Скважина №7",
+    "description": "Работает"
+},
+{
+    "status":"Healthy",
+    "name": "Скважина №8",
+    "description": "Ремонт"
+},
+{
+    "status":"Healthy",
+    "name": "Скважина №9",
+    "description": "Тех.обслуживание"
+},
+{
+    "status":"Healthy",
+    "name": "Скважина №10",
+    "description": "Работает"
+},
+{
+    "status":"Unhealthy",
+    "name": "Скважина №11",
+    "description": "Ремонт"
+}
+]

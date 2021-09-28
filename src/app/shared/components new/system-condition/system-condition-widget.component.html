@@ -1,0 +1,32 @@
+<div class="dx-card body">
+    <div class="dx-card-header">
+        <img class="dx-icon-left" src="assets/svg/i-set-h.svg">
+        <div class="dx-card-header-text">
+            Список объектов
+        </div>
+        <div class="right-tab">
+            <img class="dx-icon-right" src="assets/svg/i-more.svg">
+        </div>
+    </div>
+    <div class='body-list'>
+        <dx-scroll-view class="full-height-scrollable">
+            <dx-list id="tasks-list" [dataSource]="dataSource" [showSelectionControls]="false"
+                [pullRefreshEnabled]="false">
+                <div *dxTemplate="let data of 'item'" [ngStyle]="{'border-left':'2px solid '+data.color}"
+                    class="list-tab">
+                    <div class="left-tab">
+                        <div class="tag-tab"> {{data.name}}</div>
+                    </div>
+                    <div class="right-tab">
+                        <div class="info-tab">
+                            {{data.description}}
+                        </div>
+                        <img *ngIf="data.status=='Healthy'" src="assets/svg/i-approved-circle.svg">
+                        <img *ngIf="data.status=='Error'" src="assets/svg/i-error-circle.svg">
+                        <!--  HealthStatus.Healthy, HealthStatus.Degraded или HealthStatus.Unhealthy. -->
+                    </div>
+                </div>
+            </dx-list>
+        </dx-scroll-view>
+    </div>
+</div>
