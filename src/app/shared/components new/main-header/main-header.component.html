@@ -9,10 +9,14 @@
             placeholder="Сценарий MVP"
             (onValueChanged)="pushScript($event)"
         ></dx-select-box>
+       
         </div>
         <div class="project-name">
             Мониторинг эффективности промывки скважин
         </div>
+        <dx-button (onClick)="openCalc()">
+            Калькулятор
+        </dx-button>
     </div>
     <div class="right-tab">
         <div class="user-profile">
@@ -30,6 +34,32 @@
             <img  class="dx-icon-right"  src="assets/svg/i-more.svg">
         </div>
     </div>
+    <dx-popup
+    [width]="700"
+    [height]="500"
+    [showTitle]="true"
+    title="Калькулятор"
+    [closeOnOutsideClick]="true"
+    [(visible)]="visCalc">
+<dx-scroll-view class="full-scroll-view">
+<dx-data-grid [dataSource]="dataSource"  [showColumnLines]="true">
+    <dxo-editing 
+    mode="cell"
+    [allowUpdating]="true"
+    [allowAdding]="false"
+    [allowDeleting]="false">
+</dxo-editing>
 
-<!-- <img  class="svg-header"  src="assets/svg/mocs-header.svg">
- -->
+    <dxi-column dataField="tag" caption="Тег" [width]="100"></dxi-column>
+    <dxi-column dataField="description" caption="Параметр"></dxi-column>
+    <dxi-column dataField="unit" caption="Ед.измерения" [width]="100"></dxi-column>
+    <dxi-column dataField="value" caption="Ввод" ></dxi-column>
+
+</dx-data-grid>
+<div style="margin-top: 15px;">
+    <dx-button (onClick)="calculate()">
+        Спрогнозировать
+    </dx-button>
+</div>
+</dx-scroll-view>
+</dx-popup>

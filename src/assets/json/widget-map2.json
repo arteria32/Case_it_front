@@ -3,22 +3,25 @@
   "sizeCase":3,
   "maxSizeCase":3,
    "widgetMap":[{
-    "nameWidget": "Вес на крюке",
+    "nameWidget": "Carrying Capacity Index",
     "typeWidget":"loadingChart",
-    "value":35,
-    "maxValue":46,
-    "unit":"Т"
+    "value":0.2,
+    "status":false,
+    "maxValue":2,
+    "unit":""
   }, {
-    "nameWidget": "Крутящий момент",
+    "nameWidget": "Конц. шлама в зат. пространстве",
     "typeWidget":"loadingChart",
-    "value":1100,
-    "maxValue":1200,
-    "unit":"Н*м"
+    "value":12,
+    "maxValue":10,
+    "status":false,
+    "unit":"%"
       }, {
-    "nameWidget": "Давление на вык. линии",
+    "nameWidget": "Экв. циркуляционная плотность",
     "typeWidget":"loadingChart",
-    "value":17,
-    "maxValue":20,
+    "value":50,
+    "maxValue":140,
+    "status":false,
     "unit":"МПа"
   }]
 }

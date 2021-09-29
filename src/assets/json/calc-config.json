@@ -1,0 +1,50 @@
+[
+    {
+      "tag": "ROP",
+      "description": "Механическая скорость проходки",
+      "unit": "м/мин",
+      "value": 0
+    },
+    {
+      "tag": "GPM",
+      "description": "Расход",
+      "unit": "м/мин",
+      "value": 0
+    },
+    {
+      "tag": "iDH",
+      "description": "Внутренний диаметр ОК",
+      "unit": "мм",
+      "value": 0
+    },
+    {
+      "tag": "oD",
+      "description": "Наружный диаметр БК",
+      "unit": "мм",
+      "value": 0
+    },
+    {
+      "tag": "iD",
+      "description": "Внутренний диаметр БК",
+      "unit": "мм",
+      "value": 0
+    },
+    {
+      "tag": "MW",
+      "description": "Плотность буров",
+      "unit": "кг/м3",
+      "value": 0
+    },
+    {
+      "tag": "PV",
+      "description": "Структурная вязкость",
+      "unit": "сантипуаз",
+      "value": 0
+    },
+    {
+      "tag": "YP",
+      "description": "Динамическое напряжение сдвига",
+      "unit": "Па*с",
+      "value": 0
+    }
+   ]

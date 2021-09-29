@@ -26,6 +26,7 @@ import { StatusInfoWidgetComponent } from './shared/components new/status-infoba
 import { ScriptSettingsService } from './shared/services/srcipt-settings.service';
 import { SystemConditionWidgetComponent } from './shared/components new/system-condition/system-condition-wdget.component';
 import { LineChartWidgetComponent } from './shared/components new/line-chart/line-chart-widget.component';
+import { CalculatorService } from './shared/services/calculator-service';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,7 @@ import { LineChartWidgetComponent } from './shared/components new/line-chart/lin
     ReactiveFormsModule,
     DxCircularGaugeModule,
   ],
-  providers: [ScriptSettingsService,
+  providers: [ScriptSettingsService,CalculatorService,
     { provide: MAT_DATE_LOCALE, useValue: 'ru-RU' },
   ],
   bootstrap: [AppComponent]
